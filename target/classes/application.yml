@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: admin-client
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis: # 配置redis
+    host: 127.0.0.1
+    port: 6379
+
+mybatis:
+  type-aliases-package: com.atguigu.pojo
